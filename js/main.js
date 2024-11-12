@@ -312,3 +312,19 @@
     })();
 
 })(document.documentElement);
+
+
+// Swiper Update
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '"></span>';
+        },
+    },
+});
