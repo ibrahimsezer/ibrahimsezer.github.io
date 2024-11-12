@@ -327,4 +327,10 @@ var swiper = new Swiper('.swiper-container', {
             return '<span class="' + className + '"></span>';
         },
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    },
 });

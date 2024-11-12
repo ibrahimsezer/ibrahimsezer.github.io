@@ -2802,6 +2802,24 @@ td:last-child {
 .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 1.2rem;
 }
+/*Update*/
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .swiper-container {
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 33%;
+    }
+}
+@media (min-width: 768px) {
+    .swiper-container {
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 33%;
+    }
+}
 
 .swiper-container .swiper-pagination-bullet {
     width     : 8px;
