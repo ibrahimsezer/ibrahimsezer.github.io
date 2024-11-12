@@ -343,3 +343,27 @@ var swiper = new Swiper('.swiper-container', {
         },
     },
 });
+
+//DomContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 768) {
+        var introContent = document.querySelector('#intro .s-intro__content').innerHTML;
+        var aboutSection = document.querySelector('#about');
+        var newDiv = document.createElement('div');
+        newDiv.className = 'intro-content-mobile';
+        newDiv.innerHTML = introContent;
+        aboutSection.insertBefore(newDiv, aboutSection.firstChild);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 768) {
+        var btnDownload = document.querySelector('.s-intro__btn-download').outerHTML;
+        var scrollDown = document.querySelector('.s-intro__scroll-down').outerHTML;
+        var aboutSection = document.querySelector('#about');
+        var newDiv = document.createElement('div');
+        newDiv.className = 'intro-buttons-mobile';
+        newDiv.innerHTML = btnDownload + scrollDown;
+        aboutSection.insertBefore(newDiv, aboutSection.firstChild);
+    }
+});

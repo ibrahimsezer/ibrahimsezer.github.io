@@ -3398,7 +3398,12 @@ td:last-child {
     overflow                : hidden;
     position                : relative;
 }
-
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .s-intro {
+        height: auto;
+    }
+}
 /* --------------------------------------------------------------------
  * ## intro content
  * -------------------------------------------------------------------- */
@@ -3484,7 +3489,27 @@ td:last-child {
     pointer-events: none;
     opacity       : 0.3;
 }
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .s-intro__content-media {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .s-intro__content-media video {
+        width: 100%;
+        height: auto;
+    }
+}
 .s-intro__content-media img {
     z-index       : 2;
     -o-object-fit : cover;
@@ -3524,6 +3549,19 @@ td:last-child {
     position        : absolute;
     top             : calc(50% - 2px);
     left            : calc(var(--hline-width) * -1);
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .s-intro__btn-download {
+        --color-btn-stroke           : black;
+        --color-btn-stroke-text      : black;
+        --color-btn-stroke-hover     : black;
+        --color-btn-stroke-hover-text: var(--color-text-light);
+    }
+
+    .s-intro__btn-download .btn--stroke::before {
+        background-color: black;
+    }
 }
 
 /* --------------------------------------------------------------------
@@ -4203,7 +4241,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
     .counter-items .num {
-        font-size: var(--text-huge-1);
+        font-size: var(--text-lg);
     }
 }
 
@@ -4466,7 +4504,38 @@ td:last-child {
 }
 
 
-/* ==========================Github Card Updates=========================================
+/* ==========================DomContent=========================================
+ * ------------------------------------------------------------------- */
+/* Ensure the content is hidden in the intro section on mobile */
+@media (max-width: 768px) {
+    #intro .s-intro__content {
+        display: none;
+    }
+}
+
+/* Style for the new div in the about section */
+.intro-content-mobile {
+    padding: 10px;
+    margin-bottom: 20px; /* Optional: Add some space below the new div */
+}
+
+.intro-content-mobile .s-intro__content-text {
+    display: block;
+    text-align: center;
+}
+
+.intro-content-mobile,
+.intro-content-mobile .s-intro__content-title,
+.intro-content-mobile .s-intro__content-btns {
+    color: black;
+    display: contents; /* Hide other elements except the paragraph */
+}
+
+.intro-content-mobile p {
+    margin: 0;
+}
+
+ /* ==========================Github Card Updates=========================================
  * ------------------------------------------------------------------- */
  .project-card {
     border: 1px solid #ddd;
@@ -4508,4 +4577,29 @@ td:last-child {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .intro-buttons-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px; /* Optional: Add some space below the new div */
+    }
+
+    .intro-buttons-mobile .s-intro__btn-download,
+    .intro-buttons-mobile .s-intro__scroll-down {
+
+        margin-bottom: 20px; /* Optional: Add some space between the buttons */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .s-intro__btn-download,
+    .s-intro__scroll-down, .ss-go-top {
+        display: none;
+    }
 }
