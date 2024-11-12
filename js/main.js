@@ -316,7 +316,7 @@
 
 // Swiper Update
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
@@ -329,8 +329,17 @@ var swiper = new Swiper('.swiper-container', {
     },
     breakpoints: {
         768: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            },
         },
     },
 });
