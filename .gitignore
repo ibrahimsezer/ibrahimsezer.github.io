@@ -1,0 +1,36 @@
+# Ignore node_modules in both client and server directories
+/node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Ignore .env files in client and server directories
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+/server/.env.local
+/server/.env.development.local
+/server/.env.test.local
+/server/.env.production.local
+
+# Ignore build folders for client and server
+/client/build
+/server/build
+
+# Ignore coverage reports
+/client/coverage
+/server/coverage
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Miscellaneous
+.DS_Store
+/.pnp
+.pnp.js
