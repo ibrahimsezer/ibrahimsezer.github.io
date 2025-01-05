@@ -172,11 +172,11 @@ function App() {
             image="https://github.com/ibrahimsezer/Seezme/blob/main/lib/assets/appimage/logosquare.jpeg?raw=true"
           />
           <ProjectCard 
-            title="Secure File Transfer"
-            description="A secure file transfer application that allows users to share files using single-use codes. Built with React, Node.js, and Express. (Cursor ai was used)"
+            title="File Transfer"
+            description="A file transfer application that allows users to share files using single-use codes. Built with React, Node.js, and Express. (Cursor ai was used)"
             tags={["React", "Node.js", "Express", "Tailwindcss","Cursor AI"]}
-            link="https://github.com/ibrahimsezer/secure_file_tranfer"
-            image="https://github.com/ibrahimsezer/secure_file_tranfer/blob/main/client/public/images/securefiletransfer.png?raw=true"
+            link="https://file-tranfer-web-interface.onrender.com/"
+            image="https://github.com/ibrahimsezer/file_tranfer_web_interface/blob/main/client/public/images/logo.png?raw=true"
           /> 
           <ProjectCard 
             title="Draggable Interaction"
