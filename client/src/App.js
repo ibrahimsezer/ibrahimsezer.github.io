@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaEnvelope,  FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope,  FaCode, FaTwitter, FaMedium } from 'react-icons/fa';
 import { SiDotnet, SiTensorflow, SiPytorch,SiMicrosoftsqlserver, SiFlutter, } from 'react-icons/si';
 import { useInView } from 'react-intersection-observer';
 
@@ -54,6 +54,8 @@ function App() {
             <SocialLink href="https://github.com/ibrahimsezer" icon={<FaGithub />} />
             <SocialLink href="https://www.linkedin.com/in/ibrahim-sezer" icon={<FaLinkedin />} />
             <SocialLink href="mailto:ibrahimsezer.ceng@gmail.com" icon={<FaEnvelope />} />
+            <SocialLink href="https://x.com/joulesezarwatt" icon={<FaTwitter />} />
+            <SocialLink href="https://medium.com/@ibrahimsezer" icon={<FaMedium />} />
           </div>
         </motion.div>
       </header>
@@ -163,42 +165,89 @@ function App() {
 
       {/* Projects Section */}
       <Section id="projects" title="Featured Projects">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <ProjectCard 
             title="Seezme"
             description="A feature-rich voice and chat messaging application developed in Flutter with real-time communication capabilities."
             tags={["Flutter", "Provider", "Firebase","Webrtc Module","UI/UX Design",]}
             link="https://github.com/ibrahimsezer/Seezme"
             image="https://github.com/ibrahimsezer/Seezme/blob/main/lib/assets/appimage/logosquare.jpeg?raw=true"
+            className="h-48"
           />
-          <ProjectCard 
+          <ProjectCard
             title="File Transfer"
             description="A file transfer application that allows users to share files using single-use codes. Built with React, Node.js, and Express. (Cursor ai was used)"
             tags={["React", "Node.js", "Express", "Tailwindcss","Cursor AI"]}
             link="https://file-tranfer-web-interface.onrender.com/"
             image="https://github.com/ibrahimsezer/file_tranfer_web_interface/blob/main/client/public/images/logo.png?raw=true"
-          /> 
-          <ProjectCard 
+            className="h-48"
+          />
+          <ProjectCard
+            title="Finavix"
+            description="Personal Finance Manager App (Coming soon to PlayStore)"
+            tags={["Flutter", "Riverpod", "Firebase","MVVM", "Authorization","Cursor AI"]}
+            link="#"
+            image="images/finavix.png"
+            className="h-48"
+          />
+          <ProjectCard
             title="Draggable Interaction"
             description="A modular application combining diagram and workflow tools for interactive user experiences."
             tags={["Flutter", "UI/UX", "Interaction Design", "Endless Board"]}
             link="https://github.com/ibrahimsezer/Draggable_Interaction"
             image="https://github.com/ibrahimsezer/Draggable_Interaction/blob/main/lib/assets/images/logo.jpg?raw=true"
+            className="h-48"
           />
           <ProjectCard 
             title="YBT YAPI Webpage"
-            description="I prepared this website for the construction and building materials company called YBT Yapı. "
+            description="I prepared this website for the construction and building materials company called YBT Yapı."
             tags={["JS", "Bootstrap", "FileZilla","UI/UX Design"]}
             link="https://ybtyapi.com/"
             image="https://ybtyapi.com/images/photos/logo-default-151x44.jpg"
+            className="h-48"
           />
           <ProjectCard 
             title="Lofi Sezar | Youtube Channel"
-            description="In this channel, you will meet the music produced at the point where artificial intelligence meets creativity. By combining the power of music and technology, we explore the artistic capabilities of artificial intelligence and take the magic of music to a new dimension. From peaceful rhythms to inspiring melodies, let's explore the beauty that AI creates with music!"
+            description="In this channel, you will meet the music produced at the point where artificial intelligence meets creativity."
             tags={["Capcut", "Canva", "Generative AI","Youtube"]}
             link="https://www.youtube.com/@LofiSezar"
             image="https://avatars.githubusercontent.com/u/100922010?v=4"
+            className="h-48"
           />
+        </div>
+      </Section>
+
+      {/* Medium Articles Section */}
+      <Section id="medium-articles" title="My Latest Medium Articles">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <MediumArticleCard 
+            title="Tips for effectively using Cursor AI to boost your productivity 🚀🎯"
+            description="Cursor is an artificial intelligence-supported code editor and is designed to make software development processes more efficient. Thanks to its advanced auto-completion feature, it predicts your next steps while coding and offers multi-line suggestions, thus increasing your coding speed."
+            link="https://medium.com/@ibrahimsezer/cursor-ai-78f6dd58e38a"
+            image="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ErE0xc4Cwr3TYcIw8JOCIw.png"
+          />
+          <MediumArticleCard 
+            title="Useful websites for Flutter developers 🧑‍💻"
+            description="Every developer definitely needs creativity at some points, some want to move forward by producing their own solutions, while others want to see different perspectives. Today, I will introduce a few websites that can be useful for Flutter developers in order to provide different perspectives."
+            link="https://medium.com/@ibrahimsezer/useful-websites-for-flutter-developers-362c10410f01"
+            image="https://miro.medium.com/v2/resize:fit:640/format:webp/0*GZ76dN-TJgjPAo69"
+          /><MediumArticleCard 
+            title="Prompts Chat: Your Gateway to Crafting Effective AI Interactions 🤖"
+            description="Prompts.chat is a curated platform designed to enhance your interactions with AI-powered conversational models. Initially built for ChatGPT, the platform now supports other large language models, including Claude, Gemini, Llama, and more."
+            link="https://medium.com/@ibrahimsezer/prompts-chat-your-gateway-to-crafting-effective-ai-interactions-b65baf58126b"
+            image="https://miro.medium.com/v2/resize:fit:720/format:webp/1*vz_hjZK4Qzr4YGvIcFPt7g.png"
+          /><MediumArticleCard 
+            title="3 Things I Wish I Knew Earlier in Flutter App Monetization 🧠"
+            description="When I started my journey in Flutter app development, monetization felt like an intimidating puzzle. But as I delved deeper, I discovered three game-changing tools that simplified the process and boosted my app revenue. Whether you’re just starting out or looking to maximize your app’s earning potential, these platforms are essential for turning your Flutter app into a money-making machine. Here’s what I wish I had known earlier:"
+            link="https://medium.com/@ibrahimsezer/3-things-i-wish-i-knew-earlier-in-flutter-app-monetization-49258d7b7eea"
+            image="https://miro.medium.com/v2/resize:fit:720/format:webp/1*YrvuBcoTxmaCoTu-56bEMQ.png"
+          /><MediumArticleCard 
+            title="Discover Same.Energy: Your Gateway to Visual Inspiration 🌟"
+            description="In a world where visual content is king, finding the right inspiration can often feel like searching for a needle in a haystack. That’s where Same.Energy steps in — a revolutionary platform designed to help you discover visually similar content effortlessly. Whether you’re a designer, artist, or simply someone looking for aesthetic inspiration, Same.Energy provides a seamless way to explore images that resonate with your creative vision."
+            link="https://medium.com/@ibrahimsezer/discover-same-energy-your-gateway-to-visual-inspiration-1cf980daf488"
+            image="https://miro.medium.com/v2/resize:fit:3800/format:webp/1*YTqpyIocp7WGld-bxsL5oA.png"
+          />
+          {/* Add more MediumArticleCard components as needed */}
         </div>
       </Section>
 
@@ -266,7 +315,7 @@ const Section = ({ id, title, children }) => {
 };
 
 
-const ProjectCard = ({ title, description, tags, link, image }) => (
+const ProjectCard = ({ title, description, tags, link, image, className }) => (
   <motion.a
     href={link}
     target="_blank"
@@ -360,6 +409,28 @@ const ToolCard = ({ icon, title, description, color, skills }) => (
       }}
     />
   </motion.div>
+);
+
+const MediumArticleCard = ({ title, description, link, image }) => (
+  <motion.a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.02 }}
+    className="block bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors overflow-hidden"
+  >
+    <div className="aspect-w-16 aspect-h-9">
+      <img 
+        src={image} 
+        alt={title} 
+        className="w-full h-full object-cover rounded-t-lg"
+      />
+    </div>
+    <div className="p-6">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-300 mb-4">{description}</p>
+    </div>
+  </motion.a>
 );
 
 export default App;
