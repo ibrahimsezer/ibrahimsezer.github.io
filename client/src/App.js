@@ -4,7 +4,9 @@ import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from 'react-icons/fa';
 import { SiDotnet, SiTensorflow, SiPytorch,SiX, SiFlutter, } from 'react-icons/si';
 import { useInView } from 'react-intersection-observer';
-import { TypingAnimation } from "./components/magicui/typing-animation.tsx";
+import { TypingAnimation } from './components/magicui/typing-animation.tsx';
+import {MarqueeDemo} from './components/basic-components/marquee-components.tsx'
+import MediumButton from './components/basic-components/medium-button.jsx';
 
 function App() {
   return (
@@ -225,36 +227,11 @@ function App() {
       </Section>
       {/* Medium Articles Section */}
       <Section id="medium-articles" title="My Latest Medium Articles">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <MediumArticleCard 
-            title="Tips for effectively using Cursor AI to boost your productivity 🚀🎯"
-            description="Cursor is an artificial intelligence-supported code editor and is designed to make software development processes more efficient. Thanks to its advanced auto-completion feature, it predicts your next steps while coding and offers multi-line suggestions, thus increasing your coding speed."
-            link="https://medium.com/@ibrahimsezer/cursor-ai-78f6dd58e38a"
-            image="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ErE0xc4Cwr3TYcIw8JOCIw.png"
-          />
-          <MediumArticleCard 
-            title="Useful websites for Flutter developers 🧑‍💻"
-            description="Every developer definitely needs creativity at some points, some want to move forward by producing their own solutions, while others want to see different perspectives. Today, I will introduce a few websites that can be useful for Flutter developers in order to provide different perspectives."
-            link="https://medium.com/@ibrahimsezer/useful-websites-for-flutter-developers-362c10410f01"
-            image="https://miro.medium.com/v2/resize:fit:640/format:webp/0*GZ76dN-TJgjPAo69"
-          /><MediumArticleCard 
-            title="Prompts Chat: Your Gateway to Crafting Effective AI Interactions 🤖"
-            description="Prompts.chat is a curated platform designed to enhance your interactions with AI-powered conversational models. Initially built for ChatGPT, the platform now supports other large language models, including Claude, Gemini, Llama, and more."
-            link="https://medium.com/@ibrahimsezer/prompts-chat-your-gateway-to-crafting-effective-ai-interactions-b65baf58126b"
-            image="https://miro.medium.com/v2/resize:fit:720/format:webp/1*vz_hjZK4Qzr4YGvIcFPt7g.png"
-          /><MediumArticleCard 
-            title="3 Things I Wish I Knew Earlier in Flutter App Monetization 🧠"
-            description="When I started my journey in Flutter app development, monetization felt like an intimidating puzzle. But as I delved deeper, I discovered three game-changing tools that simplified the process and boosted my app revenue. Whether you’re just starting out or looking to maximize your app’s earning potential, these platforms are essential for turning your Flutter app into a money-making machine. Here’s what I wish I had known earlier:"
-            link="https://medium.com/@ibrahimsezer/3-things-i-wish-i-knew-earlier-in-flutter-app-monetization-49258d7b7eea"
-            image="https://miro.medium.com/v2/resize:fit:720/format:webp/1*YrvuBcoTxmaCoTu-56bEMQ.png"
-          /><MediumArticleCard 
-            title="Discover Same.Energy: Your Gateway to Visual Inspiration 🌟"
-            description="In a world where visual content is king, finding the right inspiration can often feel like searching for a needle in a haystack. That’s where Same.Energy steps in — a revolutionary platform designed to help you discover visually similar content effortlessly. Whether you’re a designer, artist, or simply someone looking for aesthetic inspiration, Same.Energy provides a seamless way to explore images that resonate with your creative vision."
-            link="https://medium.com/@ibrahimsezer/discover-same-energy-your-gateway-to-visual-inspiration-1cf980daf488"
-            image="https://miro.medium.com/v2/resize:fit:3800/format:webp/1*YTqpyIocp7WGld-bxsL5oA.png"
-          />
-          {/* Add more MediumArticleCard components as needed */}
-        </div>
+        <MarqueeDemo></MarqueeDemo>
+      <div className="my-5 mt-8 flex justify-center">
+        <MediumButton href="https://medium.com/@ibrahimsezer" />
+      </div>
+        
       </Section>
       {/* Contact Section */}
       <Section id="contact" title="Get In Touch">
@@ -416,6 +393,7 @@ const ToolCard = ({ icon, title, description, color, skills }) => (
   </motion.div>
 );
 
+
 const MediumArticleCard = ({ title, description, link, image }) => (
   <motion.a
     href={link}
@@ -437,5 +415,7 @@ const MediumArticleCard = ({ title, description, link, image }) => (
     </div>
   </motion.a>
 );
+
+
 
 export default App;
