@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaEnvelope,  FaCode, FaTwitter, FaMedium } from 'react-icons/fa';
-import { SiDotnet, SiTensorflow, SiPytorch,SiMicrosoftsqlserver, SiFlutter, } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from 'react-icons/fa';
+import { SiDotnet, SiTensorflow, SiPytorch,SiX, SiFlutter, } from 'react-icons/si';
 import { useInView } from 'react-intersection-observer';
+import { TypingAnimation } from "./components/magicui/typing-animation.tsx";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/90" />
         </div>
-
+        
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,14 +48,20 @@ function App() {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
             Ibrahim Sezer
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+                  {/* TypingAnimation*/}
+        <TypingAnimation
+          className="text-xl md:text-2xl text-gray-300 mb-8"
+          duration={50} 
+          delay={500} 
+          startOnView={true} 
+        >
             Computer Engineer & AI Enthusiast
-          </p>
+        </TypingAnimation>
           <div className="flex gap-4 justify-center">
             <SocialLink href="https://github.com/ibrahimsezer" icon={<FaGithub />} />
             <SocialLink href="https://www.linkedin.com/in/ibrahim-sezer" icon={<FaLinkedin />} />
             <SocialLink href="mailto:ibrahimsezer.ceng@gmail.com" icon={<FaEnvelope />} />
-            <SocialLink href="https://x.com/joulesezarwatt" icon={<FaTwitter />} />
+            <SocialLink href="https://x.com/joulesezarwatt" icon={<SiX />} />
             <SocialLink href="https://medium.com/@ibrahimsezer" icon={<FaMedium />} />
           </div>
         </motion.div>
@@ -216,7 +223,6 @@ function App() {
           />
         </div>
       </Section>
-
       {/* Medium Articles Section */}
       <Section id="medium-articles" title="My Latest Medium Articles">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -250,7 +256,6 @@ function App() {
           {/* Add more MediumArticleCard components as needed */}
         </div>
       </Section>
-
       {/* Contact Section */}
       <Section id="contact" title="Get In Touch">
         <div className="text-center max-w-2xl mx-auto">
