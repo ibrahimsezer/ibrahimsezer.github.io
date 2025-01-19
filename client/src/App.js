@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import { TypingAnimation } from './components/magicui/typing-animation.tsx';
 import {MarqueeDemo} from './components/basic-components/marquee-components.tsx'
 import MediumButton from './components/basic-components/medium-button.jsx';
+import {ParticlesDemo} from './components/basic-components/particles.tsx';
+
 
 function App() {
   return (
@@ -226,6 +228,7 @@ function App() {
         </div>
       </Section>
       {/* Medium Articles Section */}
+      
       <Section id="medium-articles" title="My Latest Medium Articles">
         <MarqueeDemo></MarqueeDemo>
       <div className="my-5 mt-8 flex justify-center">
@@ -234,18 +237,9 @@ function App() {
         
       </Section>
       {/* Contact Section */}
-      <Section id="contact" title="Get In Touch">
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="text-gray-300 mb-8">
-            Feel free to reach out for collaborations or just a friendly hello
-          </p>
-          <a 
-            href="mailto:ibrahimsezer.ceng@gmail.com"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold hover:opacity-90 transition-opacity"
-          >
-            Say Hello
-          </a>
-        </div>
+    
+      <Section id="contact" title="">
+      <ParticlesDemo></ParticlesDemo>
       </Section>
 
       {/* Navigation */}
