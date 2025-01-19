@@ -12,7 +12,7 @@ import {ParticlesDemo} from './components/basic-components/particles.tsx';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen flex flex-col">
       {/* Hero Section */}
       <header className="h-screen flex items-center justify-center relative overflow-hidden">
         {/* Background Image */}
@@ -228,19 +228,20 @@ function App() {
         </div>
       </Section>
       {/* Medium Articles Section */}
-      
-      <Section id="medium-articles" title="My Latest Medium Articles">
+
+      {/* <Section id="medium-articles" title="My Latest Medium Articles">
         <MarqueeDemo></MarqueeDemo>
       <div className="my-5 mt-8 flex justify-center">
         <MediumButton href="https://medium.com/@ibrahimsezer" />
       </div>
-        
-      </Section>
+
+      </Section> */}
       {/* Contact Section */}
-    
+
       <Section id="contact" title="">
-      <ParticlesDemo></ParticlesDemo>
+
       </Section>
+        <ParticlesDemo />
 
       {/* Navigation */}
       <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-6 py-3 rounded-full z-50">
