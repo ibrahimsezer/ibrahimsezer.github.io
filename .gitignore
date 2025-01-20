@@ -4,6 +4,7 @@
 /server/node_modules/
 
 # Ignore .env files in client and server directories
+/.env
 /.env.local
 /.env.development.local
 /.env.test.local
@@ -13,6 +14,7 @@
 /client/.env.test.local
 /client/.env.production.local
 /server/.env.local
+/server/.env
 /server/.env.development.local
 /server/.env.test.local
 /server/.env.production.local
@@ -34,3 +36,4 @@ yarn-error.log*
 .DS_Store
 /.pnp
 .pnp.js
+client/.env

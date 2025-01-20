@@ -210,14 +210,6 @@ function App() {
             className="h-48"
           />
           <ProjectCard 
-            title="YBT YAPI Webpage"
-            description="I prepared this website for the construction and building materials company called YBT Yapı."
-            tags={["JS", "Bootstrap", "FileZilla","UI/UX Design"]}
-            link="https://ybtyapi.com/"
-            image="https://ybtyapi.com/images/photos/logo-default-151x44.jpg"
-            className="h-48"
-          />
-          <ProjectCard 
             title="Lofi Sezar | Youtube Channel"
             description="In this channel, you will meet the music produced at the point where artificial intelligence meets creativity."
             tags={["Capcut", "Canva", "Generative AI","Youtube"]}

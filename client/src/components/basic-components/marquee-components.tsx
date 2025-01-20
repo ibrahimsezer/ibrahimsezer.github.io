@@ -49,7 +49,7 @@ const mediumArticles = [
     publishDate: "2025-01",
     readTime: "2 min read",
     img: "https://miro.medium.com/v2/resize:fit:3800/format:webp/1*YTqpyIocp7WGld-bxsL5oA.png"
-  }
+  },
 ];
 
 interface ArticleCardProps {
