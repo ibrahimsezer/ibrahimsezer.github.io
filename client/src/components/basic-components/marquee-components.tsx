@@ -58,11 +58,25 @@ const mediumArticles = [
     img: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*Bsea0YIONMss88Ls"
   },{
     title: "This is how ChatGPT observes you 👀",
-    url: "https://medium.com/@ibrahimsezer/phishing-e-mail-detection-bba5f9e5166d",
+    url: "https://medium.com/@ibrahimsezer/this-is-how-chatgpt-observes-you-c9a0f5d25336",
     description: "ChatGPT allows us to share in-depth thoughts on many topics. But how well do we keep track of what he knows about us? I can give you an…",
     publishDate: "2025-02",
     readTime: "5 min read",
     img: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*Ca9nEnmJnXOXYLhQ"
+  },{
+    title: "Yapay Zeka Gelecekte Kendini Nerede Görüyor ?",
+    url: "https://medium.com/@ibrahimsezer/yapay-zeka-gelecekte-kendini-nerede-g%C3%B6r%C3%BCyor-ef98eb09af8d",
+    description: "İnsanlar olarak yapay zekayı kullanırken çoğunlukla kendimiz ile ilgili sorular sorar, kendimizi ne kadar ileri taşıyabileceğimizi tartarız. Bu çeşit çeşit konuları sorgulayarak gerçekleşebilir. Peki yapay zekanın kendini nerede gördüğü ve ne kadar gelişebileceği hakkında bir tahminini dinlemeye ne dersiniz ?",
+    publishDate: "2025-02",
+    readTime: "4 min read",
+    img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/0*r6EbLw048BlfO1Pp"
+  },{
+    title: "E-posta Oltalama Tespiti (Phishing E-Mail Detection)",
+    url: "https://medium.com/@ibrahimsezer/e-posta-oltalama-tespiti-phishing-e-mail-detection-4378479fd06c",
+    description: "Oltalama e-postalarını daha kolay bir şekilde tespit etmek için aklıma gelen bir yöntemi sizlerle paylaşmak istiyorum. Makine öğrenimi kullanarak eğiteceğimiz bir model oluşturursak, ardından bu modeli kullanıcılar için arayüz olacak bir teknoloji ile birleştirirsek ortaya nasıl bir uygulama çıkabilir ?",
+    publishDate: "2025-02",
+    readTime: "4 min read",
+    img: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*qR6Nc-dJoKP9IqcF"
   },
 ];
 
