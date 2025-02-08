@@ -49,6 +49,20 @@ const mediumArticles = [
     publishDate: "2025-01",
     readTime: "2 min read",
     img: "https://miro.medium.com/v2/resize:fit:3800/format:webp/1*YTqpyIocp7WGld-bxsL5oA.png"
+  }, {
+    title: "Phishing E-Mail Detection",
+    url: "https://medium.com/@ibrahimsezer/phishing-e-mail-detection-bba5f9e5166d",
+    description: "Phishing emails have become one of the most common cyber-attack methods targeting individuals and organizations today. Cybercriminals use…",
+    publishDate: "2025-02",
+    readTime: "4 min read",
+    img: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*Bsea0YIONMss88Ls"
+  },{
+    title: "This is how ChatGPT observes you 👀",
+    url: "https://medium.com/@ibrahimsezer/phishing-e-mail-detection-bba5f9e5166d",
+    description: "ChatGPT allows us to share in-depth thoughts on many topics. But how well do we keep track of what he knows about us? I can give you an…",
+    publishDate: "2025-02",
+    readTime: "5 min read",
+    img: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*Ca9nEnmJnXOXYLhQ"
   },
 ];
 
