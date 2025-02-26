@@ -177,10 +177,26 @@ function App() {
       {/* Projects Section */}
       <Section id="projects" title="Featured Projects">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <ProjectCard 
+          <ProjectCard
+            title="Finavix"
+            description="Personal Finance Manager App (Coming soon to PlayStore)"
+            tags={["Flutter", "Riverpod", "Firebase","MVVM", "Authorization","Cursor AI"]}
+            link="#"
+            image="images/finavix.png"
+            className="h-48"
+          />
+          <ProjectCard
+            title="Media Player"
+            description="A modern and feature-rich media player application built with Flutter, offering a seamless music playback experience with an intuitive user interface and dynamic theming capabilities."
+            tags={["Flutter", "Provider", "MVVM","UI/UX Design"]}
+            link={"https://github.com/ibrahimsezer/mediaplayer"}
+            image="https://github.com/ibrahimsezer/mediaplayer/blob/main/lib/assets/images/default_music_photo.png?raw=true"
+            className="h-48"
+          />
+          <ProjectCard
             title="Seezme"
             description="A feature-rich voice and chat messaging application developed in Flutter with real-time communication capabilities."
-            tags={["Flutter", "Provider", "Firebase","Webrtc Module","UI/UX Design",]}
+            tags={["Flutter", "Provider", "Firebase","Webrtc Module","UI/UX Design"]}
             link="https://github.com/ibrahimsezer/Seezme"
             image="https://github.com/ibrahimsezer/Seezme/blob/main/lib/assets/appimage/logosquare.jpeg?raw=true"
             className="h-48"
@@ -194,14 +210,6 @@ function App() {
             className="h-48"
           />
           <ProjectCard
-            title="Finavix"
-            description="Personal Finance Manager App (Coming soon to PlayStore)"
-            tags={["Flutter", "Riverpod", "Firebase","MVVM", "Authorization","Cursor AI"]}
-            link="#"
-            image="images/finavix.png"
-            className="h-48"
-          />
-          <ProjectCard
             title="Draggable Interaction"
             description="A modular application combining diagram and workflow tools for interactive user experiences."
             tags={["Flutter", "UI/UX", "Interaction Design", "Endless Board"]}
@@ -209,7 +217,7 @@ function App() {
             image="https://github.com/ibrahimsezer/Draggable_Interaction/blob/main/lib/assets/images/logo.jpg?raw=true"
             className="h-48"
           />
-          <ProjectCard 
+          <ProjectCard
             title="Lofi Sezar | Youtube Channel"
             description="In this channel, you will meet the music produced at the point where artificial intelligence meets creativity."
             tags={["Capcut", "Canva", "Generative AI","Youtube"]}
