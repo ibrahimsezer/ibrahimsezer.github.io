@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { TypingAnimation } from '../components/magicui/typing-animation.tsx';
 import {ParticlesDemo} from '../components/basic-components/particles.tsx';
-import { AnimatedShinyText } from "../components/magicui/animated-shiny-text";
+import { AnimatedShinyText } from "../components/magicui/animated-shiny-text.tsx";
 
 //import {MarqueeDemo} from './components/basic-components/marquee-components.tsx'
 //import MediumButton from './components/basic-components/medium-button.jsx';
@@ -280,7 +280,7 @@ function Home(){
 
   
 // Helper Components
-const SocialLink = ({ href, icon }) => (
+const SocialLink = ({ href, icon}) => (
     <motion.a
       href={href}
       target="_blank"
