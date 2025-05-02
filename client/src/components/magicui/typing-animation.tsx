@@ -21,7 +21,7 @@ export function TypingAnimation({
   startOnView = false,
   ...props
 }: TypingAnimationProps) {
-  const MotionComponent = motion(Component);
+  const MotionComponent = motion.create(Component);
   const [displayedText, setDisplayedText] = useState<string>("");
   const [started, setStarted] = useState(false);
   const elementRef = useRef<HTMLElement | null>(null);

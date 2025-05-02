@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Particles from "../../components/magicui/particles";
+import Particles from "../magicui/particles";
 import { MarqueeDemo } from "./marquee-components";
 import { FaGithub, FaLinkedin, FaMedium, FaEnvelope } from "react-icons/fa";
 
