@@ -2,12 +2,11 @@ import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { AnimatedShinyText } from '../components/magicui/animated-shiny-text.tsx';
-import { FaTerminal } from 'react-icons/fa';
 import ExpandableCodeCard from '../components/basic-components/ExpandableCodeCard';
 import SearchBar from '../components/basic-components/SearchBar';
 import CategoryFilter from '../components/basic-components/CategoryFilter';
 import FeaturedCard from '../components/basic-components/FeaturedCard';
-import { turbo_typescriptInitialize, flutterDebugCode } from '../lib/const';
+import { scriptDetails } from '../lib/const';
 
 function Blog() {
   const navigate = useNavigate();
@@ -18,37 +17,18 @@ function Blog() {
     navigate('/');
   };
 
-  const codeSnippets = [
-    {
-      id: 1,
-      title: "Flutter Wi-Fi Debugging Guide",
-      icon: <FaTerminal />,
-      code: flutterDebugCode,
-      language: "bash",
-      category: "mobile",
-      description: "This script helps you set up Wi-Fi debugging for Flutter applications. It automates the process of connecting your Android device to your development machine over Wi-Fi, eliminating the need for USB cables.",
-      isFeatured: true
-    },
-    {
-      id: 2,
-      title: "Turbo+Typescript Initialize Guide",
-      icon: <FaTerminal />,
-      code: turbo_typescriptInitialize,
-      language: "bash",
-      category: "tools",
-      description: "This script sets up a monorepo project using Turborepo and TypeScript. It creates a structured project with separate frontend and backend applications, along with shared packages.",
-      isFeatured: true
-    }
-  ];
+  // Use scriptDetails as array
+  const allSnippets = Object.values(scriptDetails);
 
   const filteredSnippets = useMemo(() => {
-    return codeSnippets.filter(snippet => {
-      const matchesSearch = snippet.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          snippet.description.toLowerCase().includes(searchTerm.toLowerCase());
+    return allSnippets.filter(snippet => {
+      const matchesSearch =
+        snippet.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        snippet.description.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = activeCategory === 'all' || snippet.category === activeCategory;
       return matchesSearch && matchesCategory;
     });
-  }, [searchTerm, activeCategory, codeSnippets]);
+  }, [searchTerm, activeCategory, allSnippets]);
 
   const featuredSnippets = filteredSnippets.filter(snippet => snippet.isFeatured);
   const regularSnippets = filteredSnippets.filter(snippet => !snippet.isFeatured);
@@ -89,7 +69,7 @@ function Blog() {
                   <FeaturedCard
                     key={snippet.id}
                     title={snippet.title}
-                    description={snippet.description}
+                    description={snippet.titleDescription}
                   >
                     <ExpandableCodeCard
                       title={snippet.title}

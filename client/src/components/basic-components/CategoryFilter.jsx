@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaMobile, FaServer, FaTools } from 'react-icons/fa';
+import { FaCloud, FaCode, FaGit, FaGithub, FaMobile, FaServer, FaToolbox, FaTools } from 'react-icons/fa';
 import styled from 'styled-components';
 
 const CategoryContainer = styled.div`
@@ -35,6 +35,9 @@ const categories = [
   { id: 'mobile', label: 'Mobile', icon: <FaMobile /> },
   { id: 'backend', label: 'Backend', icon: <FaServer /> },
   { id: 'tools', label: 'Tools', icon: <FaTools /> },
+  { id: 'git', label: 'Git', icon: <FaGithub /> },
+  { id: 'cloud', label: 'Cloud', icon: <FaCloud /> },
+  { id: 'debugging', label: 'Debug', icon: <FaToolbox /> },
 ];
 
 const CategoryFilter = ({ activeCategory, onCategoryChange }) => {

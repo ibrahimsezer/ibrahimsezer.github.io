@@ -47,6 +47,7 @@ const Title = styled.h2`
   margin: 0;
 `;
 
+
 const Description = styled.div`
   background-color: #1e222a;
   color: #a0aec0;
