@@ -2,12 +2,12 @@ import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { AnimatedShinyText } from '../components/magicui/animated-shiny-text.tsx';
-import ExpandableCodeCard from '../components/basic-components/ExpandableCodeCard';
-import SearchBar from '../components/basic-components/SearchBar';
-import CategoryFilter from '../components/basic-components/CategoryFilter';
-import FeaturedCard from '../components/basic-components/FeaturedCard';
-import { scriptDetails } from '../lib/const';
-
+import ExpandableCodeCard from '../components/basic-components/ExpandableCodeCard.jsx';
+import SearchBar from '../components/basic-components/SearchBar.jsx';
+import CategoryFilter from '../components/basic-components/CategoryFilter.jsx';
+import FeaturedCard from '../components/basic-components/FeaturedCard.jsx';
+import { scriptDetails } from '../lib/const.js';
+import ScrollToTop from '../helper/scroll-to-top/scroll-to-top.tsx';
 function Blog() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -108,6 +108,8 @@ function Blog() {
           </motion.div>
         </div>
       </main>
+       {/* Scroll To Top */}
+       <ScrollToTop />
     </div>
   );
 }
