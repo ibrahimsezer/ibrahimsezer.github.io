@@ -22,4 +22,4 @@
   .scroll-to-top:hover {
     background-color: #ff5722;
   }
-  
+  html { scroll-behavior: smooth; }

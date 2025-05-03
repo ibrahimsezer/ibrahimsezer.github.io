@@ -9,7 +9,7 @@
     "clipboard": "^2.0.11",
     "clsx": "^2.1.1",
     "cra-template": "1.2.0",
-    "framer-motion": "^11.18.0",
+    "framer-motion": "^11.18.2",
     "lucide-react": "^0.501.0",
     "markdown-to-jsx": "^7.7.6",
     "react": "^18.2.0",

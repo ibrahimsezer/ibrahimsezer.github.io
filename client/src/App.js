@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import Blog from './pages/Blog.js';
-
+import ScrollToTop from './helper/scroll-to-top/scroll-to-top.tsx'
 function App() {
-  return (
+  return (  <>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
-    </Routes>);
+    </Routes>
+    <ScrollToTop/>
+    </>
+  );
 }
 
 export default App;

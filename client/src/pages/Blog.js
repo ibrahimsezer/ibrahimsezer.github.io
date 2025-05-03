@@ -108,8 +108,6 @@ function Blog() {
           </motion.div>
         </div>
       </main>
-       {/* Scroll To Top */}
-       <ScrollToTop />
     </div>
   );
 }
