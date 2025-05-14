@@ -192,11 +192,11 @@ function Home() {
       <Section id="projects" title="Featured Projects">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <ProjectCard
-            title="KafeKolay"
-            description="Cafe Management Saas Platform"
-            tags={["React.js", "Firebase Authentication", "TailwindCSS", "Chart.js for Analytics", "Framer Motion for Animations"]}
-            link="https://kafekolay.web.app"
-            image="https://github.com/ibrahimsezer/kafekolay/raw/main/src/logo600.png"
+            title="Sezar Bot"
+            description="Multipurpose Discord bot with Music, Chat and Tools."
+            tags={["Python", "Wispbyte Server", "Docker", "Token/API", "SQLite"]}
+            link="https://discord.com/oauth2/authorize?client_id=1369772830937317437"
+            image="https://github.com/ibrahimsezer/discord_sezar_bot/blob/main/assets/sezar.jpeg?raw=true"
             className="h-48"
           /><ProjectCard
             title="Finavix"
