@@ -43,16 +43,7 @@ function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-48 h-48 md:w-96 md:h-96 mx-auto mb-8 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-lg shadow-purple-500/20 relative"
           >
-            <video
-              className="w-full h-full object-cover object-center scale-100"
-              src="images/intro-bg.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              Your browser does not support the video tag.
-            </video>
+            <img src = "images/image_profile.png"/>
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
@@ -81,7 +72,7 @@ function Home() {
                 <AnimatedShinyText>Go to Blog</AnimatedShinyText>
               </button>
             </div>
-          </div>
+          </div> 
         </motion.div>
       </header>
 
@@ -262,6 +253,7 @@ function Home() {
       <Section id="contact" title="">
 
       </Section>
+      
       <ParticlesDemo />
 
       {/* Navigation */}

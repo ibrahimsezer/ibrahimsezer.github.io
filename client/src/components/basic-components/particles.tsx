@@ -40,7 +40,22 @@ export function ParticlesDemo() {
           </h3>
           <MarqueeDemo />
         </div>
-
+<div className="flex gap-4 justify-center">
+            <div style={{ padding: "30px" }}>
+<video
+                  src="images/app_scene.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="320"
+                  height="180"
+                  style={{ borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.2)" }}
+                  >
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+          </div>
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-300 mb-8 animate-fade-in text-center">
             Let's Connect
