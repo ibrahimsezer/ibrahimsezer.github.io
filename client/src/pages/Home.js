@@ -43,7 +43,7 @@ function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-48 h-48 md:w-96 md:h-96 mx-auto mb-8 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-lg shadow-purple-500/20 relative"
           >
-            <img src = "images/image_profile.png"/>
+            <img src="images/image_profile.png" />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
@@ -72,7 +72,7 @@ function Home() {
                 <AnimatedShinyText>Go to Blog</AnimatedShinyText>
               </button>
             </div>
-          </div> 
+          </div>
         </motion.div>
       </header>
 
@@ -87,7 +87,7 @@ function Home() {
           </p>
 
           <div className="mt-12">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Work History</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-white">Work History ✒️</h3>
             <div className="space-y-8">
               <WorkHistoryItem
                 company="TUBITAK"
@@ -119,29 +119,24 @@ function Home() {
               />
             </div>
           </div>
-
           <div className="mt-16">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Education</h3>
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="relative pl-8 border-l-2 border-purple-500/30"
-            >
-              <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-purple-500/30 border-2 border-purple-500"></div>
-              <h4 className="text-xl font-semibold text-white">Computer Engineering</h4>
-              <div className="flex flex-wrap items-center gap-2 mt-1 mb-2">
-                <span className="text-purple-400">Amasya University</span>
-                <span className="text-gray-500">•</span>
-                <span className="text-gray-400">3rd Place in Faculty</span>
-              </div>
-              <div className="text-gray-300">
-                <p className="mb-2">Final Grade: 3.22</p>
-                <p className="font-medium">Thesis: Developing an earthquake prediction algorithms using Time-Resolved GNSS data</p>
-              </div>
-            </motion.div>
+                        <div className="space-y-8">
+
+            <h3 className="text-2xl font-semibold mb-6 text-white">Education 📖</h3>
+            <WorkHistoryItem
+              company="Bursa Technical University"
+              position="Computer Engineering Master's Degree with Thesis"
+              duration="2025 - Present"
+              description="Natural Language Processing, Large Language Models">
+            </WorkHistoryItem>
+            <WorkHistoryItem
+              company="Amasya University"
+              position="Computer Engineering Bachelor's Degree"
+              duration="2020 - 2024"
+              description="Graduated with a GPA of 3.22, ranked 3rd in the faculty. Thesis focused on developing earthquake prediction algorithms using Time-Resolved GNSS data.">
+            </WorkHistoryItem>
           </div>
+        </div>
         </div>
       </Section>
 
@@ -253,7 +248,7 @@ function Home() {
       <Section id="contact" title="">
 
       </Section>
-      
+
       <ParticlesDemo />
 
       {/* Navigation */}
