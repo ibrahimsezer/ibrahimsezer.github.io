@@ -177,6 +177,14 @@ function Home() {
       {/* Projects Section */}
       <Section id="projects" title="Featured Projects">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+           <ProjectCard
+            title="Bursa Sıhhi Tesisat | Website"
+            description="A professional website for a plumbing company, showcasing services and contact information."
+            tags={["React", "Node.js", "Tailwindcss", "Generative AI"]}
+            link="https://bursasıhhitesisat.com"
+            image="https://bursasıhhitesisat.com/assets/logo/android-chrome-512x512.png"
+            className="h-48"
+          />
           <ProjectCard
             title="Sezar Bot"
             description="Multipurpose Discord bot with Music, Chat and Tools."
@@ -222,14 +230,6 @@ function Home() {
             tags={["Flutter", "UI/UX", "Interaction Design", "Endless Board"]}
             link="https://github.com/ibrahimsezer/Draggable_Interaction"
             image="https://github.com/ibrahimsezer/Draggable_Interaction/blob/main/lib/assets/images/logo.jpg?raw=true"
-            className="h-48"
-          />
-          <ProjectCard
-            title="Lofi Sezar | Youtube Channel"
-            description="In this channel, you will meet the music produced at the point where artificial intelligence meets creativity."
-            tags={["Capcut", "Canva", "Generative AI", "Youtube"]}
-            link="https://www.youtube.com/@LofiSezar"
-            image="https://avatars.githubusercontent.com/u/100922010?v=4"
             className="h-48"
           />
         </div>
