@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMedium, FaDev } from 'react-icons/fa';
 import { SiDotnet, SiTensorflow, SiPytorch, SiX, SiFlutter, } from 'react-icons/si';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -64,6 +64,8 @@ function Home() {
             <SocialLink href="mailto:ibrahimsezer.ceng@gmail.com" icon={<FaEnvelope />} />
             <SocialLink href="https://x.com/joulesezarwatt" icon={<SiX />} />
             <SocialLink href="https://medium.com/@ibrahimsezer" icon={<FaMedium />} />
+            <SocialLink href="https://dev.to/ibrahimsezer" icon={<FaDev />} />
+
           </div>
 
           <div className="flex gap-4 justify-center">
@@ -120,23 +122,23 @@ function Home() {
             </div>
           </div>
           <div className="mt-16">
-                        <div className="space-y-8">
+            <div className="space-y-8">
 
-            <h3 className="text-2xl font-semibold mb-6 text-white">Education 📖</h3>
-            <WorkHistoryItem
-              company="Bursa Technical University"
-              position="Computer Engineering Master's Degree with Thesis"
-              duration="2025 - Present"
-              description="Natural Language Processing, Large Language Models">
-            </WorkHistoryItem>
-            <WorkHistoryItem
-              company="Amasya University"
-              position="Computer Engineering Bachelor's Degree"
-              duration="2020 - 2024"
-              description="Graduated with a GPA of 3.22, ranked 3rd in the faculty. Thesis focused on developing earthquake prediction algorithms using Time-Resolved GNSS data.">
-            </WorkHistoryItem>
+              <h3 className="text-2xl font-semibold mb-6 text-white">Education 📖</h3>
+              <WorkHistoryItem
+                company="Bursa Technical University"
+                position="Computer Engineering Master's Degree with Thesis"
+                duration="2025 - Present"
+                description="I am working on genetic algorithms and optimization problem solutions.">
+              </WorkHistoryItem>
+              <WorkHistoryItem
+                company="Amasya University"
+                position="Computer Engineering Bachelor's Degree"
+                duration="2020 - 2024"
+                description="Graduated with a GPA of 3.22, ranked 3rd in the faculty. Thesis focused on developing earthquake prediction algorithms using Time-Resolved GNSS data.">
+              </WorkHistoryItem>
+            </div>
           </div>
-        </div>
         </div>
       </Section>
 
@@ -177,12 +179,28 @@ function Home() {
       {/* Projects Section */}
       <Section id="projects" title="Featured Projects">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-           <ProjectCard
-            title="Bursa Sıhhi Tesisat | Website"
+          <ProjectCard
+            title="Chess Warmup"
+            description="A chess coordinates memorization app with blinding and timed modes to improve your chess skills."
+            tags={["React", "Tailwindcss", "Node.js", "Chess", "Generative AI"]}
+            link="https://chesswarmup.netlify.app/"
+            image="https://github.com/ibrahimsezer/chess-warmup/blob/main/public/chesswarmup-logo.png?raw=true"
+            className="h-48"
+          />
+          <ProjectCard
+            title="Bursa Sıhhi Tesisat"
             description="A professional website for a plumbing company, showcasing services and contact information."
             tags={["React", "Node.js", "Tailwindcss", "Generative AI"]}
             link="https://bursasıhhitesisat.com"
             image="https://bursasıhhitesisat.com/assets/logo/android-chrome-512x512.png"
+            className="h-48"
+          />
+          <ProjectCard
+            title="Ezan Vakti"
+            description="A professional website for a prayer time application, showcasing features and contact information."
+            tags={["React", "Next.js", "Tailwindcss", "Generative AI"]}
+            link="https://ezannamaz.netlify.app"
+            image="https://ezannamaz.netlify.app/logo.png"
             className="h-48"
           />
           <ProjectCard
@@ -224,14 +242,7 @@ function Home() {
             image="https://github.com/ibrahimsezer/file_tranfer_web_interface/blob/main/client/public/images/logo.png?raw=true"
             className="h-48"
           />
-          <ProjectCard
-            title="Draggable Interaction"
-            description="A modular application combining diagram and workflow tools for interactive user experiences."
-            tags={["Flutter", "UI/UX", "Interaction Design", "Endless Board"]}
-            link="https://github.com/ibrahimsezer/Draggable_Interaction"
-            image="https://github.com/ibrahimsezer/Draggable_Interaction/blob/main/lib/assets/images/logo.jpg?raw=true"
-            className="h-48"
-          />
+
         </div>
       </Section>
       {/* Medium Articles Section */}

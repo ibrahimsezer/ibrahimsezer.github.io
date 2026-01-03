@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Particles from "../magicui/particles";
 import { MarqueeDemo } from "./marquee-components";
-import { FaGithub, FaLinkedin, FaMedium, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaDev } from "react-icons/fa";
 
 export function ParticlesDemo() {
   const [color, setColor] = useState("#8B5CF6"); // Modern purple color
@@ -28,6 +28,11 @@ export function ParticlesDemo() {
       icon: <FaMedium className="w-6 h-6" />,
       href: "https://medium.com/@ibrahimsezer",
       label: "Medium"
+    },
+    {
+      icon: <FaDev className="w-6 h-6" />,
+      href: "https://dev.to/ibrahimsezer",
+      label: "Dev.to"
     }
   ];
 
@@ -40,27 +45,27 @@ export function ParticlesDemo() {
           </h3>
           <MarqueeDemo />
         </div>
-<div className="flex gap-4 justify-center">
-            <div style={{ padding: "30px" }}>
-<video
-                  src="images/app_scene.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  width="320"
-                  height="180"
-                  style={{ borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.2)" }}
-                  >
-                  Your browser does not support the video tag.
-                  </video>
-            </div>
+        <div className="flex gap-4 justify-center">
+          <div style={{ padding: "30px" }}>
+            <video
+              src="images/app_scene.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              width="320"
+              height="180"
+              style={{ borderRadius: "12px", boxShadow: "0 2px 12px rgba(0,0,0,0.2)" }}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-300 mb-8 animate-fade-in text-center">
             Let's Connect
           </h2>
-          
+
           <div className="flex flex-wrap justify-center gap-6 mb-12">
             {socialLinks.map((link) => (
               <a
