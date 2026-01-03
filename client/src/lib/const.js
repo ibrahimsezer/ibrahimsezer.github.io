@@ -2,13 +2,13 @@
 import { FaTerminal } from 'react-icons/fa';
 
 export const scriptDetails = {
-    flutter_wifi_debug: {
-        id: 1,
-        title: "🔷 Flutter Wifi Debug Initialize Guide",
-        codetitle: "Flutter Wifi Debug",
-        titleDescription: "This script automates the process of connecting your Android device to your development machine over Wi-Fi, eliminating the need for USB cables.",
-        icon: <FaTerminal />,
-        code: `@echo off
+  flutter_wifi_debug: {
+    id: 1,
+    title: "🔷 Flutter Wifi Debug Initialize Guide",
+    codetitle: "Flutter Wifi Debug",
+    titleDescription: "This script automates the process of connecting your Android device to your development machine over Wi-Fi, eliminating the need for USB cables.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0A
 title Flutter Wi-Fi Debug Connection
 
@@ -61,19 +61,19 @@ IF %ERRORLEVEL% EQU 0 (
 echo.
 pause
 `,
-        language: "bash",
-        category: "mobile",
-        description: "This script automates the process of connecting your Android device to your development machine over Wi-Fi, eliminating the need for USB cables.",
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
-    },
-    turbo_typescript: {
-        id: 2,
-        title: "🔧 Turbo+Typescript Initialize Guide",
-        codetitle: "Turbo+Typescript",
-        titleDescription: "This script sets up a monorepo project using Turborepo and TypeScript. It creates a structured project with separate frontend and backend applications, along with shared packages.",
-        icon: <FaTerminal />,
-        code: `@echo off
+    language: "bash",
+    category: "mobile",
+    description: "This script automates the process of connecting your Android device to your development machine over Wi-Fi, eliminating the need for USB cables.",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
+  },
+  turbo_typescript: {
+    id: 2,
+    title: "🔧 Turbo+Typescript Initialize Guide",
+    codetitle: "Turbo+Typescript",
+    titleDescription: "This script sets up a monorepo project using Turborepo and TypeScript. It creates a structured project with separate frontend and backend applications, along with shared packages.",
+    icon: <FaTerminal />,
+    code: `@echo off
 :: Monorepo Project Setup Script
 
 :: === CONFIGURATION ===
@@ -169,20 +169,20 @@ cd ..\\..\\..
 echo.
 echo ✅ Setup completed successfully. Your frontend and backend folders are ready!
 pause`,
-        language: "bash",
-        category: "tools",
-        description: "Misuse of commands like /MIR may delete destination files. Ensure files are not locked during backup. Regularly check backup destination space. Watch for permission issues.",
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
+    language: "bash",
+    category: "tools",
+    description: "Misuse of commands like /MIR may delete destination files. Ensure files are not locked during backup. Regularly check backup destination space. Watch for permission issues.",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
 
-    },
-    git_auto_pull: {
-        id: 3,
-        title: "🔄 Git Repo Auto-Pull & Build",
-        codetitle: "git-auto-pull-build",
-        titleDescription: "Automatically pulls updates from a Git repository and builds the project. Ideal for lightweight CI/CD workflows.",
-        icon: <FaTerminal />,
-        code: `@echo off
+  },
+  git_auto_pull: {
+    id: 3,
+    title: "🔄 Git Repo Auto-Pull & Build",
+    codetitle: "git-auto-pull-build",
+    titleDescription: "Automatically pulls updates from a Git repository and builds the project. Ideal for lightweight CI/CD workflows.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0B
 title Git Auto‑Pull & Build
 
@@ -236,9 +236,9 @@ if %ERRORLEVEL% equ 0 (
 
 pause
 `,
-        language: "bash",
-        category: "git",
-        description: `
+    language: "bash",
+    category: "git",
+    description: `
 🎯 What is its purpose?
 Update a project periodically or when triggered:
 
@@ -265,17 +265,17 @@ If the build fails, subsequent operations will be affected.
 If private repo is used instead of public repo, the access token should be stored securely.
 
 The directory where the script will run must be set correctly, there is a risk of overwriting the wrong repo.`,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
 
-    },
-    docker_build: {
-        id: 4,
-        title: "🐳 Docker: Build & Push Image",
-        codetitle: "docker-build-push",
-        titleDescription: "Builds a Docker image from a project and pushes it to a container registry. Useful for automated deployments.",
-        icon: <FaTerminal />,
-        code: `@echo off
+  },
+  docker_build: {
+    id: 4,
+    title: "🐳 Docker: Build & Push Image",
+    codetitle: "docker-build-push",
+    titleDescription: "Builds a Docker image from a project and pushes it to a container registry. Useful for automated deployments.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0E
 title Docker Build & Push
 
@@ -321,9 +321,9 @@ if %ERRORLEVEL% equ 0 (
 
 pause
 `,
-        language: "bash",
-        category: "backend",
-        description: `🐳 Docker: Build & Push Image
+    language: "bash",
+    category: "backend",
+    description: `🐳 Docker: Build & Push Image
 🎯 What is its purpose?
 Automatically builds a project containing a dockerfile:
 
@@ -352,17 +352,17 @@ If the built image is large, the push time may be too long.
 Hidden data should not be left in Dockerfile.
 
 Make sure Docker daemon is active before running the script.`,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
 
-    },
-    azure_func: {
-        id: 5,
-        title: "☁️ Azure Functions Deployment",
-        codetitle: "azure-functions-deploy",
-        titleDescription: "Builds and deploys an Azure Functions project by zipping and pushing it using Azure CLI.",
-        icon: <FaTerminal />,
-        code: `@echo off
+  },
+  azure_func: {
+    id: 5,
+    title: "☁️ Azure Functions Deployment",
+    codetitle: "azure-functions-deploy",
+    titleDescription: "Builds and deploys an Azure Functions project by zipping and pushing it using Azure CLI.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 09
 title Deploy Azure Functions
 
@@ -400,9 +400,9 @@ if %ERRORLEVEL% equ 0 (
 
 pause
 `,
-        language: "bash",
-        category: "cloud",
-        description: `🎯 What is the Purpose?
+    language: "bash",
+    category: "cloud",
+    description: `🎯 What is the Purpose?
 An Azure Functions project:
 
 Builds
@@ -430,17 +430,17 @@ If there is a Function App slot, it should not be deployed to the wrong slot.
 If the resource group or app name is entered incorrectly, there may be a risk of data loss.
 
 Alternatives such as func azure functionapp publish should be evaluated before deployment.`,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
 
-    },
-    log_file_monitor: {
-        id: 6,
-        title: "🔍 Log File Monitor (Tail Emulation)",
-        codetitle: "log-file-monitor",
-        titleDescription: "Emulates Unix tail -f command on Windows to monitor live changes in log files. Useful for debugging.",
-        icon: <FaTerminal />,
-        code: `@echo off
+  },
+  log_file_monitor: {
+    id: 6,
+    title: "🔍 Log File Monitor (Tail Emulation)",
+    codetitle: "log-file-monitor",
+    titleDescription: "Emulates Unix tail -f command on Windows to monitor live changes in log files. Useful for debugging.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0D
 title Log Monitor
 
@@ -468,9 +468,9 @@ echo Monitoring %LOG_FILE% every %INTERVAL% seconds. Press Ctrl+C to stop.
   timeout /t %INTERVAL% >nul
 goto loop
 `,
-        language: "bash",
-        category: "debugging",
-        description: `
+    language: "bash",
+    category: "debugging",
+    description: `
 🎯 What is its purpose?
 As the Windows equivalent of the tail -f command in Linux, it allows live monitoring of changes at the end of a .log file. This is useful, for example, to monitor the logs of a web server in real time.
 
@@ -491,17 +491,17 @@ If the log file is very large, it can quickly consume memory.
 If the file is write-locked, it may not be monitored.
 
 tail emulation may not be able to provide full-time updates, delays may occur.`,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
 
-    },
-    folder_sync: {
-        id: 7,
-        title: "📁 Two-Way Folder Sync with Robocopy",
-        codetitle: "folder-sync",
-        titleDescription: "Folder sync",
-        icon: <FaTerminal />,
-        code: `@echo off
+  },
+  folder_sync: {
+    id: 7,
+    title: "📁 Two-Way Folder Sync with Robocopy",
+    codetitle: "folder-sync",
+    titleDescription: "Folder sync",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0C
 title Robocopy Two‑Way Sync
 
@@ -532,9 +532,9 @@ echo.
 echo Sync complete. Log available at %LOGFILE%.
 pause
 `,
-        language: "bash",
-        category: "tools",
-        description: `🎯 What is its purpose?
+    language: "bash",
+    category: "tools",
+    description: `🎯 What is its purpose?
 This script performs two-way file synchronization between two folders. That is:
 
 When synchronizing FolderA → FolderB, files in FolderA but not in FolderB are copied, and files in FolderB but not in FolderA are deleted.
@@ -547,17 +547,17 @@ This allows two folders to be made identical (bi-directional mirroring).
 Since the script is performing a critical operation (such as deleting a file),
 it requires prior confirmation from the user. If the user types anything other than Y,
 the operation is canceled. This reduces the risk of misuse.`
-        ,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
-    },
-    check_ip_network: {
-        id: 8,
-        title: "🌐 Network: Check IP Address and Internet Connectivity",
-        codetitle: "check-ip-network",
-        titleDescription: "This script displays your local IP address and checks internet connectivity.",
-        icon: <FaTerminal />,
-        code: `@echo off
+    ,
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
+  },
+  check_ip_network: {
+    id: 8,
+    title: "🌐 Network: Check IP Address and Internet Connectivity",
+    codetitle: "check-ip-network",
+    titleDescription: "This script displays your local IP address and checks internet connectivity.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0D
 title Network Status
 
@@ -569,19 +569,19 @@ ping www.google.com -n 1
 
 echo
 pause`,
-        language: "bash",
-        category: "tools",
-        description: "This script displays your local IP address and checks internet connectivity.",
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
-    },
-    server_backup: {
-        id: 9,
-        title: "🗄️ Server Backup",
-        codetitle: "server-backup",
-        titleDescription: "It is used to back up specific files or folders on the server to a specified destination folder (usually an external disk, NAS or another server). With this script, scheduled daily/weekly backups can be automated.",
-        icon: <FaTerminal />,
-        code: `@echo off
+    language: "bash",
+    category: "tools",
+    description: "This script displays your local IP address and checks internet connectivity.",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
+  },
+  server_backup: {
+    id: 9,
+    title: "🗄️ Server Backup",
+    codetitle: "server-backup",
+    titleDescription: "It is used to back up specific files or folders on the server to a specified destination folder (usually an external disk, NAS or another server). With this script, scheduled daily/weekly backups can be automated.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0A
 title SQL Server Backup
 
@@ -606,9 +606,9 @@ if %ERRORLEVEL% EQU 0 (
 pause
 
 `,
-        language: "bash",
-        category: "backend",
-        description: `
+    language: "bash",
+    category: "backend",
+    description: `
 🎯 What is its purpose?
 It is used to back up specific files or folders on the server to a specified destination folder (usually an external disk, NAS or another server). With this script, scheduled daily/weekly backups can be automated.
 
@@ -629,33 +629,33 @@ Backup directories should be tested for file locking.
 The free space of the backup destination should be checked regularly.
 
 Permissions/access rights should be considered when backing up critical system files.`,
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
-    },
-    clean_temporary_files:{
-        
-        id: 10,
-        title: "🛠️ Tool: Clean Temporary Files",
-        codetitle: "clean-temp-file",
-        titleDescription: "This script cleans up temporary and log files in your project directory.",
-        icon: <FaTerminal />,
-        code: `@echo off
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
+  },
+  clean_temporary_files: {
+
+    id: 10,
+    title: "🛠️ Tool: Clean Temporary Files",
+    codetitle: "clean-temp-file",
+    titleDescription: "This script cleans up temporary and log files in your project directory.",
+    icon: <FaTerminal />,
+    code: `@echo off
 color 0C
 title Clean Temporary Files
 
 echo [1] Deleting temporary files...
-del /s /q "C:\Path\To\Your\Project\*.tmp"
-del /s /q "C:\Path\To\Your\Project\*.log"
+del /s /q "C:/Path/To/Your/Project/*.tmp"
+del /s /q "C:/Path/To/Your/Project/*.log"
 
 echo [2] Cleanup completed.
 echo.
 pause
 `,
-        language: "bash",
-        category: "tools",
-        description: "This script cleans up temporary and log files in your project directory.",
-        isFeatured: true,
-        lastUpdated: "2025-05-02",
-   
-    }
+    language: "bash",
+    category: "tools",
+    description: "This script cleans up temporary and log files in your project directory.",
+    isFeatured: true,
+    lastUpdated: "2025-05-02",
+
+  }
 };

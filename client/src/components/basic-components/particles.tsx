@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Particles from "../magicui/particles";
 import { MarqueeDemo } from "./marquee-components";
 import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaDev } from "react-icons/fa";
 
 export function ParticlesDemo() {
-  const [color, setColor] = useState("#8B5CF6"); // Modern purple color
+  const [color] = useState("#8B5CF6"); // Modern purple color
 
   const socialLinks = [
     {

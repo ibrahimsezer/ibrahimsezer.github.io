@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCloud, FaCode, FaGit, FaGithub, FaMobile, FaServer, FaToolbox, FaTools } from 'react-icons/fa';
+import { FaCloud, FaCode, FaGithub, FaMobile, FaServer, FaToolbox, FaTools } from 'react-icons/fa';
 import styled from 'styled-components';
 
 const CategoryContainer = styled.div`

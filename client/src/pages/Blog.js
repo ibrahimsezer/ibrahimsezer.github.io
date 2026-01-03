@@ -7,7 +7,7 @@ import SearchBar from '../components/basic-components/SearchBar.jsx';
 import CategoryFilter from '../components/basic-components/CategoryFilter.jsx';
 import FeaturedCard from '../components/basic-components/FeaturedCard.jsx';
 import { scriptDetails } from '../lib/const.js';
-import ScrollToTop from '../helper/scroll-to-top/scroll-to-top.tsx';
+
 function Blog() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -57,7 +57,7 @@ function Blog() {
             transition={{ duration: 0.5 }}
           >
             <SearchBar onSearch={setSearchTerm} />
-            <CategoryFilter 
+            <CategoryFilter
               activeCategory={activeCategory}
               onCategoryChange={setActiveCategory}
             />

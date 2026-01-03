@@ -43,7 +43,7 @@ function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-48 h-48 md:w-96 md:h-96 mx-auto mb-8 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-lg shadow-purple-500/20 relative"
           >
-            <img src="images/image_profile.png" />
+            <img src="images/image_profile.png" alt="Profile" />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
