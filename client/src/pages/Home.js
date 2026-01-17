@@ -204,13 +204,22 @@ function Home() {
             className="h-48"
           />
           <ProjectCard
+            title="CS2 Leaderboard"
+            description="A leaderboard for Counter-Strike 2, showcasing player statistics and achievements."
+            tags={["Python", "Github Pages", "Github Actions", "Steam Web API"]}
+            link="https://ibrahimsezer.github.io/cs2-leaderboard/"
+            image="https://github.com/ibrahimsezer/cs2-leaderboard/blob/main/public/icon-512.png?raw=true"
+            className="h-48"
+          />
+          <ProjectCard
             title="Sezar Bot"
             description="Multipurpose Discord bot with Music, Chat and Tools."
             tags={["Python", "Wispbyte Server", "Docker", "Token/API", "SQLite"]}
             link="https://discord.com/oauth2/authorize?client_id=1369772830937317437"
             image="https://github.com/ibrahimsezer/discord_sezar_bot/blob/main/assets/sezar.jpeg?raw=true"
             className="h-48"
-          /><ProjectCard
+          />
+          <ProjectCard
             title="Finavix"
             description="Personal Finance Manager App (Coming soon to PlayStore)"
             tags={["Flutter", "Riverpod", "Firebase", "MVVM", "Authorization", "Cursor AI"]}
