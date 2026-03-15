@@ -8,6 +8,9 @@ import { Link } from 'react-scroll';
 import { TypingAnimation } from '../components/magicui/typing-animation.tsx';
 import { ParticlesDemo } from '../components/basic-components/particles.tsx';
 import { AnimatedShinyText } from "../components/magicui/animated-shiny-text.tsx";
+import StarButton from '../components/basic-components/StarButton.jsx';
+import HoverOverText from '../components/basic-components/HoverOverText.jsx';
+import NavigationButton from '../components/basic-components/NavigationButton.jsx';
 
 //import {MarqueeDemo} from './components/basic-components/marquee-components.tsx'
 //import MediumButton from './components/basic-components/medium-button.jsx';
@@ -75,6 +78,8 @@ function Home() {
               </button>
             </div>
           </div>
+
+          <StarButton></StarButton>
         </motion.div>
       </header>
 
@@ -270,16 +275,10 @@ function Home() {
       </Section>
 
       <ParticlesDemo />
-
       {/* Navigation */}
-      <nav className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm px-6 py-3 rounded-full z-50">
-        <ul className="flex space-x-8">
-          <NavItem to="about" label="About" />
-          <NavItem to="skills" label="Skills" />
-          <NavItem to="projects" label="Projects" />
-          <NavItem to="contact" label="Contact" />
-        </ul>
-      </nav>
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+        <NavigationButton />
+      </div>
 
     </div>
   );
