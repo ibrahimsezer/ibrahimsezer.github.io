@@ -13,10 +13,13 @@
   }
 }
 
-html,
-body,
-* {
-  cursor: none !important;
+@media (min-width: 1024px) {
+
+  html,
+  body,
+  * {
+    cursor: none !important;
+  }
 }
 
 /* Custom scrollbar */

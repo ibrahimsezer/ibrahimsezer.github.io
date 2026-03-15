@@ -3,22 +3,27 @@ import React, { useEffect, useRef, useState } from 'react';
 const CustomCursor = () => {
     const cursorRef = useRef(null);
     const [isHovering, setIsHovering] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const timeoutRef = useRef(null);
 
     useEffect(() => {
+        // Cihazın dokunmatik olup olmadığını kontrol et
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+        // Eğer dokunmatik cihazsa hiçbir event listener ekleme ve çık
+        if (isTouchDevice) return;
+
         const cursor = cursorRef.current;
         if (!cursor) return;
 
-        // Fare koordinatlarını state yerine doğrudan değişkenlerde tutuyoruz
-        let mouseX = 0;
-        let mouseY = 0;
-
         const onMouseMove = (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
+            if (!isVisible) setIsVisible(true);
+            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
 
-            // React render döngüsünü beklemeden doğrudan DOM'u güncelliyoruz
-            // Bu, 'lag' hissini tamamen ortadan kaldırır
-            cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
+            timeoutRef.current = setTimeout(() => {
+                setIsVisible(false);
+            }, 3000);
         };
 
         const handleMouseOver = (e) => {
@@ -34,30 +39,25 @@ const CustomCursor = () => {
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseover', handleMouseOver);
         window.addEventListener('mouseout', handleMouseOut);
+        document.addEventListener('mouseleave', () => setIsVisible(false));
 
         return () => {
             window.removeEventListener('mousemove', onMouseMove);
             window.removeEventListener('mouseover', handleMouseOver);
             window.removeEventListener('mouseout', handleMouseOut);
+            document.removeEventListener('mouseleave', () => setIsVisible(false));
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
         };
-    }, []);
+    }, [isVisible]);
 
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 pointer-events-none z-[9999] will-change-transform"
-            style={{
-                // İlk değerler ve geçiş efektleri
-                backfaceVisibility: 'hidden',
-                perspective: 1000
-            }}
+            /* hidden lg:block: 1024px altındaki cihazlarda (tabletler dahil) gizler */
+            className={`fixed top-0 left-0 pointer-events-none z-[9999] will-change-transform hidden lg:block transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         >
-            <div className={`transition-all duration-300 ease-out ${isHovering ? 'scale-150' : 'scale-100'}`}
-                style={{ filter: isHovering ? 'drop-shadow(0px 0px 8px rgba(168, 85, 247, 0.6))' : 'drop-shadow(0px 4px 6px rgba(0,0,0,0.3))' }}>
-                <svg
-                    width="28" height="28" viewBox="0 0 24 24" fill="none"
-                    style={{ transform: 'rotate(-15deg)' }}
-                >
+            <div className={`transition-all duration-300 ease-out ${isHovering ? 'scale-150' : 'scale-100'}`}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style={{ transform: 'rotate(-15deg)' }}>
                     <defs>
                         <linearGradient id="cursorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stopColor={isHovering ? "#fb923c" : "#9333ea"} />
