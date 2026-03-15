@@ -187,7 +187,7 @@ function Home() {
             description="A chess coordinates memorization app with blinding and timed modes to improve your chess skills."
             tags={["React", "Tailwindcss", "Node.js", "Chess", "Generative AI"]}
             link="https://chesswarmup.netlify.app/"
-            image="https://github.com/ibrahimsezer/chess-warmup/blob/main/public/chesswarmup-logo.png?raw=true"
+            image="images/projects/chesswarmup.webp"
             className="h-48"
           />
           <ProjectCard
@@ -195,7 +195,7 @@ function Home() {
             description="A professional website for a plumbing company, showcasing services and contact information."
             tags={["React", "Node.js", "Tailwindcss", "Generative AI"]}
             link="https://bursasıhhitesisat.com"
-            image="https://bursasıhhitesisat.com/assets/logo/android-chrome-512x512.png"
+            image="images/projects/bursatesisat.webp"
             className="h-48"
           />
           <ProjectCard
@@ -203,7 +203,7 @@ function Home() {
             description="A professional website for a prayer time application, showcasing features and contact information."
             tags={["React", "Next.js", "Tailwindcss", "Generative AI"]}
             link="https://ezannamaz.netlify.app"
-            image="https://ezannamaz.netlify.app/logo.png"
+            image="images/projects/ezannamaz.webp"
             className="h-48"
           />
           <ProjectCard
@@ -211,7 +211,7 @@ function Home() {
             description="A leaderboard for Counter-Strike 2, showcasing player statistics and achievements."
             tags={["Python", "Github Pages", "Github Actions", "Steam Web API"]}
             link="https://ibrahimsezer.github.io/cs2-leaderboard/"
-            image="https://github.com/ibrahimsezer/cs2-leaderboard/blob/main/public/icon-512.png?raw=true"
+            image="images/projects/cs2leaderboard.webp"
             className="h-48"
           />
           <ProjectCard
@@ -219,7 +219,7 @@ function Home() {
             description="Multipurpose Discord bot with Music, Chat and Tools."
             tags={["Python", "Wispbyte Server", "Docker", "Token/API", "SQLite"]}
             link="https://discord.com/oauth2/authorize?client_id=1369772830937317437"
-            image="https://github.com/ibrahimsezer/discord_sezar_bot/blob/main/assets/sezar.jpeg?raw=true"
+            image="images/projects/discordbot.webp"
             className="h-48"
           />
           <ProjectCard
@@ -227,15 +227,7 @@ function Home() {
             description="Personal Finance Manager App (Coming soon to PlayStore)"
             tags={["Flutter", "Riverpod", "Firebase", "MVVM", "Authorization", "Cursor AI"]}
             link="#"
-            image="images/finavix.png"
-            className="h-48"
-          />
-          <ProjectCard
-            title="Media Player"
-            description="A modern and feature-rich media player application built with Flutter, offering a seamless music playback experience with an intuitive user interface and dynamic theming capabilities."
-            tags={["Flutter", "Provider", "MVVM", "UI/UX Design"]}
-            link={"https://github.com/ibrahimsezer/mediaplayer"}
-            image="https://github.com/ibrahimsezer/mediaplayer/blob/main/lib/assets/images/default_music_photo.png?raw=true"
+            image="images/projects/finavix.webp"
             className="h-48"
           />
           <ProjectCard
@@ -243,7 +235,7 @@ function Home() {
             description="A feature-rich voice and chat messaging application developed in Flutter with real-time communication capabilities."
             tags={["Flutter", "Provider", "Firebase", "Webrtc Module", "UI/UX Design"]}
             link="https://github.com/ibrahimsezer/Seezme"
-            image="https://github.com/ibrahimsezer/Seezme/blob/main/lib/assets/appimage/logosquare.jpeg?raw=true"
+            image="images/projects/seezme.webp"
             className="h-48"
           />
           <ProjectCard
@@ -251,7 +243,7 @@ function Home() {
             description="A file transfer application that allows users to share files using single-use codes. Built with React, Node.js, and Express. (Cursor ai was used)"
             tags={["React", "Node.js", "Express", "Tailwindcss", "Cursor AI"]}
             link="https://file-tranfer-web-interface.onrender.com/"
-            image="https://github.com/ibrahimsezer/file_tranfer_web_interface/blob/main/client/public/images/logo.png?raw=true"
+            image="images/projects/filetransfer.webp"
             className="h-48"
           />
 
