@@ -265,10 +265,12 @@ function Home() {
       </Section>
       <ParticlesDemo />
       {/* Navigation */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+      <div className="fixed bottom-8 
+                left-[10px] right-[10px] 
+                md:left-1/2 md:-translate-x-1/2 md:right-auto 
+                z-50">
         <NavigationButton />
       </div>
-
     </div>
   );
 }
