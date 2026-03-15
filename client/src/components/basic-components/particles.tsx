@@ -4,7 +4,6 @@ import { useState } from "react";
 import Particles from "../magicui/particles";
 import { MarqueeDemo } from "./marquee-components";
 import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaDev } from "react-icons/fa";
-
 export function ParticlesDemo() {
   const [color] = useState("#8B5CF6"); // Modern purple color
 

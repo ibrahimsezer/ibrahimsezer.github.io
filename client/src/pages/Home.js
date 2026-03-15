@@ -9,9 +9,7 @@ import { TypingAnimation } from '../components/magicui/typing-animation.tsx';
 import { ParticlesDemo } from '../components/basic-components/particles.tsx';
 import { AnimatedShinyText } from "../components/magicui/animated-shiny-text.tsx";
 import StarButton from '../components/basic-components/StarButton.jsx';
-import HoverOverText from '../components/basic-components/HoverOverText.jsx';
 import NavigationButton from '../components/basic-components/NavigationButton.jsx';
-
 //import {MarqueeDemo} from './components/basic-components/marquee-components.tsx'
 //import MediumButton from './components/basic-components/medium-button.jsx';
 
@@ -273,7 +271,6 @@ function Home() {
       <Section id="contact" title="">
 
       </Section>
-
       <ParticlesDemo />
       {/* Navigation */}
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
